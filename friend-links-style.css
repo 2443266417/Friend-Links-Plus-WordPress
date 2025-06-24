@@ -1,0 +1,141 @@
+.friend-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 20px 0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.friend-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+  width: 260px;
+  padding: 20px 18px 28px;
+  box-sizing: border-box;
+  transition: box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-card:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.15);
+}
+
+.friend-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.friend-favicon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 14px;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+}
+
+.friend-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.friend-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+  margin: 0 0 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.friend-title.friend-rss-invalid a {
+  color: #e55353;
+}
+
+.friend-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.friend-title a:hover {
+  text-decoration: underline;
+}
+
+.friend-desc {
+  font-size: 0.85rem;
+  color: #888;
+  line-height: 1.3;
+  max-height: 3.9em; /* 3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+
+.friend-posts {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 12px 0;
+  flex-grow: 1;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.friend-posts li {
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.friend-posts li a {
+  color: #3a6fb0;
+  text-decoration: none;
+}
+
+.friend-posts li a:hover {
+  text-decoration: underline;
+}
+
+.friend-time {
+  font-size: 0.75rem;
+  color: #bbb;
+  margin-top: auto;
+  text-align: right;
+}
+
+.friend-dead {
+  border: 1px solid #e55353 !important;
+}
+
+.friend-dead-notice {
+  font-size: 0.75rem;
+  color: #e55353;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.friend-heatbar {
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+.friend-heatbar > div {
+  height: 100%;
+  background: #ff5a5a;
+  width: 0%;
+  transition: width 0.5s ease;
+}
