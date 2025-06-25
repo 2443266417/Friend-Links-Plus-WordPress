@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: 友链 Plus 异步检测版（veryjack风格）
-Description: 友链展示+RSS抓取+链接存活检测，后台异步刷新检测状态，支持缓存清理和CSV导出，前端样式仿 veryjack.com。
+Plugin Name: 友链 Plus 异步检测版
+Description: 友链展示+RSS抓取+链接存活检测，后台异步刷新检测状态，支持缓存清理和CSV导出。
 Version: 1.7
 Author: 段先森
 Author URI: https://www.duanxiansen.com/
